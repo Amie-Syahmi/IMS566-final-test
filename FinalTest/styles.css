@@ -1,0 +1,107 @@
+/* Green and Purple Theme */
+:root {
+--primary-green: #28a745;
+--secondary-green: #218838;
+--primary-purple: #6f42c1;
+--secondary-purple: #5a32a3;
+--light-bg: #f8f9fa;
+--dark-text: #343a40;
+}
+
+/* Navbar */
+.navbar {
+background: linear-gradient(135deg, var(--primary-green), var(--primary-purple));
+box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand, .nav-link {
+color: white !important;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+color: rgba(255,255,255,0.8) !important;
+}
+
+/* Buttons */
+.btn-primary {
+background-color: var(--primary-green);
+border-color: var(--secondary-green);
+}
+
+.btn-primary:hover {
+background-color: var(--secondary-green);
+border-color: var(--secondary-green);
+}
+
+.btn-outline-primary {
+color: var(--primary-green);
+border-color: var(--primary-green);
+}
+
+.btn-outline-primary:hover {
+background-color: var(--primary-green);
+color: white;
+}
+
+.btn-purple {
+background-color: var(--primary-purple);
+color: white;
+border-color: var(--secondary-purple);
+}
+
+.btn-purple:hover {
+background-color: var(--secondary-purple);
+color: white;
+}
+
+/* Cards */
+.card {
+border: none;
+box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+transition: transform 0.3s ease;
+}
+
+.card:hover {
+transform: translateY(-5px);
+}
+
+.card-header {
+background-color: var(--primary-purple);
+color: white;
+}
+
+/* Forms */
+.form-control:focus {
+border-color: var(--primary-purple);
+box-shadow: 0 0 0 0.2rem rgba(111, 66, 193, 0.25);
+}
+
+/* Badges */
+.badge-primary {
+background-color: var(--primary-purple);
+}
+
+/* Rating Stars */
+.rating {
+color: var(--primary-purple);
+}
+
+/* Footer */
+.footer {
+background-color: var(--dark-text);
+color: white;
+padding: 2rem 0;
+}
+
+/* Custom utilities */
+.bg-light-custom {
+background-color: var(--light-bg);
+}
+
+.text-purple {
+color: var(--primary-purple);
+}
+
+.border-purple {
+border-color: var(--primary-purple);
+}
